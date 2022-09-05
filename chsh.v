@@ -15,10 +15,10 @@ module amogus;
     end
 
     initial begin
-	for (i=0;i<1;i=i+1) begin
+	//for (i=0;i<1;i=i+1) begin
         $display(x,y);
 	$monitor("T=%t|penis=%d|amogus=%d|bruh=%d",$time,p,q,final);
-	end
         $finish;
+        //end
     end
 endmodule
