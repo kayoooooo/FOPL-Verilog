@@ -10,14 +10,16 @@ module amogus;
 	a=$fgetc(f);
 	b=$fgetc(f);
 	l = $fopen("xy.txt", "r");
-	x=$fgetc(l);
-	y=$fgetc(l);
+	x=$fgetc(l)%2;
+	y=$fgetc(l)%2;
     end
 
     initial begin
 	//for (i=0;i<1;i=i+1) begin
-        $display(x,y);
-	$monitor("T=%t|penis=%d|amogus=%d|bruh=%d",$time,p,q,final);
+	$display("a=%b | b=%b",a,b);
+        $display("x=%b | y=%b",x,y);
+	$display(p);
+	$monitor("p=%d|q=%d|bruh=%d",p,q,final);
         $finish;
         //end
     end
