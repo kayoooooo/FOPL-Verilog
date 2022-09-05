@@ -10,4 +10,7 @@ I could not, for the love of God, find a way to get randomization which was not 
 Thus, I have a python file to pseudo-randomly generate x and y for me.\
 These x and y are put into the xy.txt file.\
 The python file is the reason there is a .sh file, this is what has to be run to run the program.
- (It randomizes x and y, then runs the verilog file)\
+ (It randomizes x and y, then runs the verilog file)
+
+IN SHORT\
+Run the sh file for the program to run.
