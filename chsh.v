@@ -16,12 +16,17 @@ module amogus;
 
     initial begin
 	//for (i=0;i<1;i=i+1) begin
-	$display("a=%b | b=%b",a,b);
-        $display("x=%b | y=%b",x,y);
+	$display("a = %b | b = %b",a,b);
+        $display("x = %b | y = %b",x,y);
 	#10
 	$display("a xor b = %b",q);
 	$display("x and y = %b",p);
-	$display("p=%d|q=%d|bruh=%d",p,q,final);
+	$display("final = %d",final);
+	if (final) begin
+	$display("You are win");
+	end else begin
+	$display("L");
+	end
         $finish;
         //end
     end
